@@ -61,7 +61,7 @@ import vueInternetChecker from 'vue-internet-checker';
       onlineNotification: {
         title: '😊',
         text: 'Are you Online 😊',
-        type: 'success', //success, warn
+        type: 'success', //success, warn, danger
         duration: 5000,
       },
       offlineNotification: {
