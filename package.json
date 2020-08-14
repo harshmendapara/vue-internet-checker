@@ -1,7 +1,7 @@
 {
     "name": "vue-internet-checker",
     "description": "Check Internet Availability for your vue app ",
-    "version": "1.1.1 beta",
+    "version": "1.1.2",
     "author": {
         "name": "Harsh Mendapara",
         "email": "mendaparaharsh02@gmail.com",

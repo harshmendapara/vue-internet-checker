@@ -8136,10 +8136,10 @@
         if (_this.showNotification) {
           _this.$notify({
             group: 'vue-internet-checker',
-            title: _this.onlineNotification.title ? _this.onlineNotification.title : '😊',
-            text: _this.onlineNotification.text ? _this.onlineNotification.text : 'Are you Online 😊',
-            type: _this.onlineNotification.success ? _this.onlineNotification.success : 'success',
-            duration: _this.onlineNotification.duration ? _this.onlineNotification.duration : 5000
+            title: _this.onlineNotification ? _this.onlineNotification.title : '😊',
+            text: _this.onlineNotification ? _this.onlineNotification.text : 'Are you Online 😊',
+            type: _this.onlineNotification ? _this.onlineNotification.success : 'success',
+            duration: _this.onlineNotification ? _this.onlineNotification.duration : 5000
           });
         }
       });
@@ -8151,10 +8151,10 @@
         if (_this.showNotification) {
           _this.$notify({
             group: 'vue-internet-checker',
-            title: _this.offlineNotification.title ? _this.offlineNotification.title : 'Opps! No Internet 😢',
-            text: _this.offlineNotification.text ? _this.offlineNotification.text : 'Please check your network connection',
-            type: _this.offlineNotification.success ? _this.offlineNotification.success : 'warn',
-            duration: _this.offlineNotification.duration ? _this.offlineNotification.duration : 5000
+            title: _this.offlineNotification ? _this.offlineNotification.title : 'Opps! No Internet 😢',
+            text: _this.offlineNotification ? _this.offlineNotification.text : 'Please check your network connection',
+            type: _this.offlineNotification ? _this.offlineNotification.success : 'warn',
+            duration: _this.offlineNotification ? _this.offlineNotification.duration : 5000
           });
         }
       });

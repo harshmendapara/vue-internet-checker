@@ -47,16 +47,16 @@
         if (this.showNotification) {
           this.$notify({
             group: 'vue-internet-checker',
-            title: this.onlineNotification.title
+            title: this.onlineNotification
               ? this.onlineNotification.title
               : '😊',
-            text: this.onlineNotification.text
+            text: this.onlineNotification
               ? this.onlineNotification.text
               : 'Are you Online 😊',
-            type: this.onlineNotification.success
+            type: this.onlineNotification
               ? this.onlineNotification.success
               : 'success',
-            duration: this.onlineNotification.duration
+            duration: this.onlineNotification
               ? this.onlineNotification.duration
               : 5000,
           });
@@ -69,16 +69,16 @@
         if (this.showNotification) {
           this.$notify({
             group: 'vue-internet-checker',
-            title: this.offlineNotification.title
+            title: this.offlineNotification
               ? this.offlineNotification.title
               : 'Opps! No Internet 😢',
-            text: this.offlineNotification.text
+            text: this.offlineNotification
               ? this.offlineNotification.text
               : 'Please check your network connection',
-            type: this.offlineNotification.success
+            type: this.offlineNotification
               ? this.offlineNotification.success
               : 'warn',
-            duration: this.offlineNotification.duration
+            duration: this.offlineNotification
               ? this.offlineNotification.duration
               : 5000,
           });
