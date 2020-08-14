@@ -8,15 +8,15 @@
     created: function created() {
       var _this = this;
 
-      window.addEventListener('online', function (res) {
+      window.addEventListener('online', function (event) {
         _this.$emit('status', true);
 
-        _this.$emit('res', res);
+        _this.$emit('event', event);
       });
-      window.addEventListener('offline', function (res) {
+      window.addEventListener('offline', function (event) {
         _this.$emit('status', false);
 
-        _this.$emit('res', res);
+        _this.$emit('event', event);
       });
     }
   };
