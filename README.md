@@ -13,91 +13,69 @@
 ## :white_check_mark: Install :ok_hand:
 
 ```bash
-npm install v-offline
+npm install vue-internet-checker
 # or
-yarn add v-offline
+yarn add vue-internet-checker
 ```
 
-CDN: [UNPKG](https://unpkg.com/v-offline/dist/) | [jsDelivr](https://cdn.jsdelivr.net/npm/v-offline/dist/) (available as `window.VOffline`)
+CDN: [UNPKG](https://unpkg.com/vue-internet-checker/dist/) | [jsDelivr](https://cdn.jsdelivr.net/npm/vue-internet-checker/dist/) (available as `window.vueInternetChecker`)
 
 ## :white_check_mark: Usage :mortar_board:
 
 Register the component globally:
 
 ```javascript
-Vue.component('VOffline', require('v-offline'));
+Vue.component('vueInternetChecker', require('vue-internet-checker'));
 ```
 
 Or use locally
 
 ```javascript
-import VOffline from 'v-offline';
+import vueInternetChecker from 'vue-internet-checker';
 ```
 
 ## :white_check_mark: Example 1 :four_leaf_clover:
 
 ### HTML
 ```html
-<v-offline
-  online-class="online"
-  offline-class="offline"
-  @detected-condition="amIOnline">
-  <template v-slot:[onlineSlot] :slot-name="onlineSlot">
-    ( Online: {{ onLine }} )
-  </template>
-  <template v-slot:[offlineSlot] :slot-name="offlineSlot">
-    ( Online: {{ onLine }} )
-  </template>
-</v-offline>
+<vue-internet-checker @status="status" @res="res"> </vue-internet-checker>
 ```
 
 ### JS
 ```javascript
-import VOffline from 'v-offline';
+  import vueInternetChecker from '../src';
 
-Vue.component('example-component', {
-  components: {
-    VOffline
-  },
-  data: () => ({
-    onLine: null,
-    onlineSlot: 'online',
-    offlineSlot: 'offline',
-  }),
-  methods: {
-    amIOnline(e) {
-      this.onLine = e;
+  export default {
+    components: {
+      vueInternetChecker,
     },
-  },
-});
+    data: () => ({
+      onLine: null,
+    }),
+    methods: {
+      status(ele) {
+        console.log(ele);
+        this.onLine = ele;
+      },
+      res(ele) {
+        console.log(ele);
+      },
+    },
+  };
+
 ```
 
 ### CSS
 ```css
-.offline {
-  background-color: #fc9842;
-  background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
-}
-.online {
-  background-color: #00b712;
-  background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
-}
+
 ```
-
-### :white_check_mark: :book: Props
-
-| Name            | Type   | Required? | Default              | Description                                                 |
-| --------------  | ------ | --------- | ---------            | ----------------------------------------------------------- |
-| `slot-name`     | String | No        | 'online'             | The name of the slot, refer to the [v-slot docs](https://vuejs.org/v2/guide/components-slots.html#Dynamic-Slot-Names)    |
-| `online-class`  | String | No        | ''                   | Styling the `div` which you want to give if you're online.  |
-| `offline-class` | String | No        | ''                   | Styling the `div` which you want to give if you're offline. |
-| `ping-url`      | String | No        | https://google.com   | Pinging any url to double check if you're online or not.    |
 
 ### :white_check_mark: :ear: Events
 
 | Name                 | Description                                                                 |
 | -------------------- | --------------------------------------------------------------------------- |
-| `detected-condition` | Emits an Boolean value which can be used for multiple purposes in your app. |
+| `status` | Emits an Boolean value which can be used for multiple purposes in your app. |
+| `res` |  |
 
 ## Contributing
 
