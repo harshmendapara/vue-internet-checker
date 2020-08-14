@@ -38,7 +38,14 @@ import vueInternetChecker from 'vue-internet-checker';
 
 ### HTML
 ```html
-<vue-internet-checker @status="status" @event="event" />
+<vue-internet-checker
+  :show-notification="true"
+  :online-notification="onlineNotification"
+  :offline-notification="offlineNotification"
+  :notification-speed="1000"
+  @status="status"
+  @event="event"
+/>
 ```
 
 ### JS
@@ -49,8 +56,20 @@ import vueInternetChecker from 'vue-internet-checker';
     components: {
       vueInternetChecker,
     },
-    data: () => ({
+     data: () => ({
       onLine: null,
+      onlineNotification: {
+        title: '😊',
+        text: 'Are you Online 😊',
+        type: 'success', //success, warn
+        duration: 5000,
+      },
+      offlineNotification: {
+        title: 'Opps! No Internet 😢',
+        text: 'Please check your network connection',
+        type: 'warn',
+        duration: 5000,
+      },
     }),
     methods: {
       status(ele) {
@@ -70,12 +89,24 @@ import vueInternetChecker from 'vue-internet-checker';
 
 ```
 
+### :white_check_mark: :ear: Props
+
+| Name                 | Description                                                                 |
+| -------------------- | --------------------------------------------------------------------------- |
+| `notification-position` | default bottom right |
+| `notification-speed` | speed: 1000  |
+| `show-notification` | default true |
+| `online-notification` | default onlineNotification: { title: '😊', text: 'Are you Online 😊', type: 'success', duration: 5000}  |
+| `offline-notification` | default offline-notification offlineNotification: { title: 'Opps! No Internet 😢', text: 'Please check your network connection', type: 'warn', duration: 5000}  |
+
+
 ### :white_check_mark: :ear: Events
 
 | Name                 | Description                                                                 |
 | -------------------- | --------------------------------------------------------------------------- |
 | `status` | Emits an Boolean value which can be used for multiple purposes in your app. |
 | `event` |  |
+
 
 ## Contributing
 
