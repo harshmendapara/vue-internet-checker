@@ -109,11 +109,8 @@ Vue.component('example-component', {
 
 ## Author
 
-**v-offline** © [Vinayak](https://github.com/vinayakkulkarni), Released under the [MIT](./LICENSE) License.<br>
-Authored and maintained by Vinayak Kulkarni with help from contributors ([list](https://github.com/vinayakkulkarni/v-offline/contributors)).
+**v-offline** © [Harsh Mendapara](https://github.com/Harsh02051998/), Released under the [MIT](./LICENSE) License.<br>
+Authored and maintained by Vinayak Kulkarni with help from contributors ([list](https://github.com/Harsh02051998/vue-internet-checker/graphs/contributors)).
 
-> GitHub [@vinayakkulkarni](https://github.com/vinayakkulkarni) · Twitter [@\_vinayak_k](https://twitter.com/_vinayak_k)
+> GitHub [@Harsh02051998](https://github.com/Harsh02051998)
 
-
-## License
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-offline.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fvinayakkulkarni%2Fv-offline?ref=badge_large)

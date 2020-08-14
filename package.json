@@ -1,42 +1,80 @@
 {
-  "name": "vue-internet-checker",
-  "version": "1.0.1",
-  "private": false,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.4.0",
-    "@vue/cli-plugin-eslint": "~4.4.0",
-    "@vue/cli-service": "~4.4.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
+    "name": "vue-internet-checker",
+    "description": "Offline and Online components for VueJS",
+    "version": "1.0.1",
+    "author": {
+        "name": "Harsh Mendapara",
+        "email": "mendaparaharsh02@gmail.com",
+        "url": "https://github.com/Harsh02051998"
     },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
+    "private": false,
+    "main": "dist/vue-internet-checker.min.js",
+    "module": "dist/vue-internet-checker.esm.js",
+    "files": [
+        "dist/*"
     ],
-    "parserOptions": {
-      "parser": "babel-eslint"
+    "keywords": [
+        "vuejs",
+        "offline",
+        "online",
+        "detect",
+        "internet-connectivity",
+        "disconnect",
+        "vue-internet-checker",
+        "internet-checker",
+        "checker",
+        "internet",
+        "vue-internet",
+        "connect"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Harsh02051998/vue-internet-checker"
     },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "scripts": {
+        "test": "npm run bundle && karma start karma.conf.js",
+        "test-watch": "karma start karma.conf.js --no-single-run",
+        "build": "npm run bundle && npm run bundle:min",
+        "bundle": "rollup -c build/rollup.conf.js",
+        "bundle:min": "rollup -c build/rollup.min.conf.js",
+        "serve": "vue-cli-serve"
+    },
+    "dependencies": {
+        "ping.js": "^0.2.3"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.8.7",
+        "@babel/preset-env": "^7.8.7",
+        "@rollup/plugin-commonjs": "^14.0.0",
+        "@rollup/plugin-node-resolve": "^8.0.0",
+        "aliasify": "^2.1.0",
+        "babel-eslint": "^10.0.1",
+        "babel-loader": "^8.0.6",
+        "babelify": "^10.0.0",
+        "browserify": "^16.5.0",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.10.0",
+        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-vue": "^6.2.2",
+        "jasmine-core": "^3.5.0",
+        "karma": "^5.0.0",
+        "karma-browserify": "^7.0.0",
+        "karma-jasmine": "^4.0.0",
+        "karma-phantomjs-launcher": "^1.0.4",
+        "karma-spec-reporter": "^0.0.32",
+        "phantomjs-prebuilt": "^2.1.16",
+        "prettier": "^2.0.2",
+        "rollup": "^2.0.6",
+        "rollup-plugin-babel": "^4.4.0",
+        "rollup-plugin-terser": "^7.0.0",
+        "rollup-plugin-vue": "^5.1.6",
+        "vue": "^2.6.11",
+        "vue-template-compiler": "^2.6.11",
+        "watchify": "^3.11.1"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Harsh02051998/vue-internet-checker/issues"
+    },
+    "homepage": "https://we-online.site/"
 }
