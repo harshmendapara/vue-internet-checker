@@ -3583,7 +3583,7 @@ karma-browserify@^7.0.0:
     minimatch "^3.0.0"
     os-shim "^0.1.3"
 
-karma-jasmine@^4.0.0:
+karma-jasmine@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/karma-jasmine/-/karma-jasmine-4.0.1.tgz#b99e073b6d99a5196fc4bffc121b89313b0abd82"
   integrity sha512-h8XDAhTiZjJKzfkoO1laMH+zfNlra+dEQHUAjpn5JV1zCPtOIVWGQjLBrqhnzQa/hrU2XrZwSyBa6XjEBzfXzw==
