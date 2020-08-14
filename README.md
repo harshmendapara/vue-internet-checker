@@ -1,10 +1,10 @@
-# vue-internet-checker :zap: <a href="http://npmjs.org/package/vue-internet-checker"><img src="https://img.shields.io/npm/v/v-offline.svg" alt="npm version"></a> <a href="https://bundlephobia.com/result?p=v-offline"><img src="http://img.badgesize.io/vinayakkulkarni/v-offline/master/dist/v-offline.min.js?compression=gzip" alt="gzip size"></a> <a href="https://travis-ci.org/vinayakkulkarni/v-offline"><img src="https://travis-ci.org/vinayakkulkarni/v-offline.svg?branch=master" alt="Build Status"></a> <a href="http://npm-stat.com/charts.html?package=v-offline"><img src="https://img.shields.io/npm/dm/v-offline.svg" alt="npm downloads"></a>
+# vue-internet-checker
 
-* Detect offline & online events for your vue app.
+* Check Internet Availability for your vue app 😃.
+
+* Get notifications regarding your internet Availability by using it. In needing of your feedback for my efforts.😃
 
 * This is [on GitHub](https://github.com/Harsh02051998/vue-internet-checker) so let me know if I've b0rked it somewhere, give me a star :star: if you like it :beers:
-
-* Demo here -> [💯 Webpackbin Link](https://goo.gl/Pq6Tky)
 
 ## Requirements
 
@@ -34,11 +34,11 @@ Or use locally
 import vueInternetChecker from 'vue-internet-checker';
 ```
 
-## :white_check_mark: Example 1 :four_leaf_clover:
+## :white_check_mark: Example :four_leaf_clover:
 
 ### HTML
 ```html
-<vue-internet-checker @status="status" @res="res"> </vue-internet-checker>
+<vue-internet-checker @status="status" @event="event" />
 ```
 
 ### JS
@@ -57,7 +57,7 @@ import vueInternetChecker from 'vue-internet-checker';
         console.log(ele);
         this.onLine = ele;
       },
-      res(ele) {
+      event(ele) {
         console.log(ele);
       },
     },
@@ -75,7 +75,7 @@ import vueInternetChecker from 'vue-internet-checker';
 | Name                 | Description                                                                 |
 | -------------------- | --------------------------------------------------------------------------- |
 | `status` | Emits an Boolean value which can be used for multiple purposes in your app. |
-| `res` |  |
+| `event` |  |
 
 ## Contributing
 
@@ -88,7 +88,7 @@ import vueInternetChecker from 'vue-internet-checker';
 ## Author
 
 **v-offline** © [Harsh Mendapara](https://github.com/Harsh02051998/), Released under the [MIT](./LICENSE) License.<br>
-Authored and maintained by Vinayak Kulkarni with help from contributors ([list](https://github.com/Harsh02051998/vue-internet-checker/graphs/contributors)).
+Authored and maintained by Harsh Mendapara with help from contributors ([list](https://github.com/Harsh02051998/vue-internet-checker/graphs/contributors)).
 
 > GitHub [@Harsh02051998](https://github.com/Harsh02051998)
 

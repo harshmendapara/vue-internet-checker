@@ -1,7 +1,7 @@
 {
     "name": "vue-internet-checker",
     "description": "Offline and Online components for VueJS",
-    "version": "1.0.1",
+    "version": "1.0.4",
     "author": {
         "name": "Harsh Mendapara",
         "email": "mendaparaharsh02@gmail.com",
@@ -37,7 +37,7 @@
         "build": "npm run bundle && npm run bundle:min",
         "bundle": "rollup -c build/rollup.conf.js",
         "bundle:min": "rollup -c build/rollup.min.conf.js",
-        "serve": "vue-cli-serve"
+        "serve": "vue-cli-service serve --port 2511"
     },
     "dependencies": {
         "ping.js": "^0.2.3"

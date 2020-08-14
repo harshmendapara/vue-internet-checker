@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <vue-internet-checker @status="status" @res="res"> </vue-internet-checker>
+    <vue-internet-checker @status="status" @event="event" />
   </div>
 </template>
 
@@ -19,7 +19,7 @@
         console.log(ele);
         this.onLine = ele;
       },
-      res(ele) {
+      event(ele) {
         console.log(ele);
       },
     },

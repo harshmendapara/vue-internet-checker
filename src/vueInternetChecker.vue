@@ -4,14 +4,14 @@
 <script>
   export default {
     created() {
-      window.addEventListener('online', (res) => {
+      window.addEventListener('online', (event) => {
         this.$emit('status', true);
-        this.$emit('res', res);
+        this.$emit('event', event);
       });
 
-      window.addEventListener('offline', (res) => {
+      window.addEventListener('offline', (event) => {
         this.$emit('status', false);
-        this.$emit('res', res);
+        this.$emit('event', event);
       });
     },
   };
