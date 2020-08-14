@@ -59,16 +59,16 @@ import vueInternetChecker from 'vue-internet-checker';
      data: () => ({
       onLine: null,
       onlineNotification: {
-        title: '😊',
-        text: 'Are you Online 😊',
-        type: 'success', //success, warn, danger
-        duration: 5000,
+        title: '😊', // Title (will be wrapped in div.notification-title)
+        text: 'Are you Online 😊', // Content (will be wrapped in div.notification-content)
+        type: 'success', // Class that will be assigned to the notification  "success, warn, danger"
+        duration: 5000, // Class that will be assigned to the notification  "success, warn, danger"
       },
       offlineNotification: {
-        title: 'Opps! No Internet 😢',
-        text: 'Please check your network connection',
-        type: 'warn',
-        duration: 5000,
+        title: 'Opps! No Internet 😢', // Title (will be wrapped in div.notification-title)
+        text: 'Please check your network connection', // Content (will be wrapped in div.notification-content)
+        type: 'warn', // Class that will be assigned to the notification  "success, warn, danger"
+        duration: 5000, // Class that will be assigned to the notification  "success, warn, danger"
       },
     }),
     methods: {
