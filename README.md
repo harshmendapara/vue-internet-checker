@@ -95,7 +95,10 @@ import vueInternetChecker from 'vue-internet-checker';
 Authored and maintained by Harsh Mendapara with help from contributors ([list](https://github.com/Harsh02051998/vue-internet-checker/graphs/contributors)).
 
 > GitHub [@Harsh02051998](https://github.com/Harsh02051998)
+
 > Gmail [@mendaparaharsh02](mendaparaharsh02@gmail.com)
+
 > Linkedin [@harsh-mendapara-%E2%9C%85-44883a165/](https://www.linkedin.com/in/harsh-mendapara-%E2%9C%85-44883a165/)
+
 > Facebook [@mhb0205](https://www.facebook.com/mhb0205)
 
