@@ -11,6 +11,5 @@ export default {
     format: 'umd',
     name: 'vueInternetChecker',
     file: 'dist/vue-internet-checker.min.js',
-  },
-  external: ['ping'],
+  }
 };
