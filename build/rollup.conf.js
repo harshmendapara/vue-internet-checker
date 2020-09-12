@@ -16,6 +16,5 @@ export default {
       format: 'es',
       file: 'dist/vue-internet-checker.esm.js',
     },
-  ],
-  external: ['ping'],
+  ]
 };
