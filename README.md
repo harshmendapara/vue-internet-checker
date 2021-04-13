@@ -98,7 +98,10 @@ Authored and maintained by Harsh Mendapara with help from contributors ([list](h
 
 > Gmail [@Harsh Mendapara](mendaparaharsh02@gmail.com)
 
-> Linkedin [@harsh-mendapara-44883a165/](https://www.linkedin.com/in/harsh-mendapara-44883a165/)
+> Linkedin [@Harsh Mendapara](https://www.linkedin.com/in/harsh-mendapara-44883a165/)
 
 > Facebook [@Harsh Mendapara](https://www.facebook.com/mhb0205)
+> 
+Let's fly together :)
+
 
