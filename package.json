@@ -1,7 +1,7 @@
 {
     "name": "vue-internet-checker",
     "description": "Check Internet Availability for your vue app ",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "author": {
         "name": "Harsh Mendapara",
         "email": "mendaparaharsh02@gmail.com",
@@ -14,7 +14,8 @@
         "dist/*"
     ],
     "keywords": [
-        "vuejs",
+        "Vue.JS",
+        "Nuxt.JS",
         "offline",
         "online",
         "detect",
@@ -29,7 +30,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Harsh02051998/vue-internet-checker"
+        "url": "git+https://github.com/harshmendapara/vue-internet-checker"
     },
     "scripts": {
         "test": "npm run bundle && karma start karma.conf.js",
@@ -71,7 +72,6 @@
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Harsh02051998/vue-internet-checker/issues"
-    },
-    "homepage": "https://we-online.site/"
+        "url": "https://github.com/harshmendapara/vue-internet-checker/issues"
+    }
 }
