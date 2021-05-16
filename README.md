@@ -92,7 +92,7 @@ import vueInternetChecker from 'vue-internet-checker';
 ## Author
 
 **vue-internet-checker** © [Harsh Mendapara](https://github.com/harshmendapara/), Released under the [MIT](./LICENSE) License.<br>
-Authored and maintained by Harsh Mendapara with help from contributors ([list](https://github.com/Harsh02051998/vue-internet-checker/graphs/contributors)).
+Authored and maintained by Harsh Mendapara with help from contributors ([list](https://github.com/harshmendapara/vue-internet-checker/graphs/contributors)).
 
 > GitHub [@Harsh Mendapara](https://github.com/harshmendapara)
 
