@@ -1,26 +1,30 @@
 <template>
   <div id="app">
-    <vue-internet-checker @status="status" @event="event" />
+    <VueInternetChecker @status="status" @event="event" />
+    <h2>Internet Status: {{ onLine ? 'Online' : 'Offline' }}</h2>
+    <p>Last event: {{ eventType || 'none' }}</p>
   </div>
 </template>
 
 <script>
-  import vueInternetChecker from '../src';
+  import VueInternetChecker from '../src';
 
   export default {
     components: {
-      vueInternetChecker,
+      VueInternetChecker,
     },
-    data: () => ({
-      onLine: null,
-    }),
+    data() {
+      return {
+        onLine: true,
+        eventType: null,
+      };
+    },
     methods: {
       status(ele) {
-        console.log(ele);
         this.onLine = ele;
       },
       event(ele) {
-        console.log(ele);
+        this.eventType = ele.type;
       },
     },
   };
